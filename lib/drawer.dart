@@ -1,7 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:ynotradio/main.dart';
 
 class MyDrawer extends StatelessWidget {
   @override
@@ -14,27 +13,40 @@ class MyDrawer extends StatelessWidget {
               child: Image.asset('images/logo.png')),
           ListTile(
             title: Text('Ma Radio'),
-            leading: Icon(Icons.person, color: Colors.black,),
-            onTap: (){},
+            leading: Icon(
+              Icons.person,
+              color: Colors.black,
+            ),
+            onTap: () {},
           ),
           ListTile(
             title: Text('A propos'),
-            leading: Icon(Icons.error_outline, color: Colors.black,),
-            onTap: (){},
+            leading: Icon(
+              Icons.error_outline,
+              color: Colors.black,
+            ),
+            onTap: () {},
           ),
           ListTile(
             title: Text('Contact'),
-            leading: Icon(Icons.contact_mail, color: Colors.black,),
-            onTap: (){},
+            leading: Icon(
+              Icons.contact_mail,
+              color: Colors.black,
+            ),
+            onTap: () {},
           ),
           ListTile(
             title: Text('Déconnexion'),
-            leading: Icon(Icons.lock, color: Colors.black,),
-            onTap: (){},
+            leading: Icon(
+              Icons.lock,
+              color: Colors.black,
+            ),
+            onTap: () {
+              //TODO
+            },
           ),
         ],
       ),
     );
-
   }
 }
